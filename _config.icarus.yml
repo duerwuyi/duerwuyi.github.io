@@ -3,12 +3,11 @@ version: 5.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo:
-  text: Duerwuyi
+logo: /img/logo.jpg
 # Page metadata configurations
 head:
   # URL or path to the website's icon
-  favicon: /img/favicon.svg
+  favicon: /img/favicon.ico
   # Web application manifests configuration
   # https://developer.mozilla.org/en-US/docs/Web/Manifest
   manifest:
