@@ -98,25 +98,16 @@ navbar:
     About: /about
   # Links to be shown on the right of the navigation bar
   links:
-    Discuss on GitHub:
-      icon: fas fa-comments
-      url: 'https://github.com/ppoffice/hexo-theme-icarus/discussions'
     Download on GitHub:
       icon: fab fa-github
-      url: 'https://github.com/ppoffice/hexo-theme-icarus'
+      url: 'https://github.com/duerwuyi/duerwuyi.github.io/tree/server'
 # Page footer configurations
 footer:
   # Links to be shown on the right of the footer section
   links:
-    Creative Commons:
-      icon: fab fa-creative-commons
-      url: 'https://creativecommons.org/'
-    Discuss on GitHub:
-      icon: fas fa-comments
-      url: 'https://github.com/ppoffice/hexo-theme-icarus/discussions'
     Download on GitHub:
       icon: fab fa-github
-      url: 'https://github.com/ppoffice/hexo-theme-icarus'
+      url: 'https://github.com/duerwuyi/duerwuyi.github.io/tree/server'
 # Article related configurations
 article:
   # Code highlight settings
@@ -191,7 +182,7 @@ sidebar:
   # Right sidebar configurations
   right:
     # Whether the sidebar sticks to the top when page scrolls
-    sticky: false
+    sticky: true
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
@@ -201,11 +192,11 @@ widgets:
     position: left
     type: profile
     # Author name
-    author: PPOffice
+    author: Duerwuyi
     # Author title
-    author_title: Web Developer
+    author_title: 仅供娱乐
     # Author's current location
-    location: Earth, Solar System
+    location: げんそうきょう、にじげん
     # URL or path to the avatar image
     avatar:
     # Whether show the rounded avatar image
@@ -213,59 +204,50 @@ widgets:
     # Email address for the Gravatar
     gravatar:
     # URL or path for the follow button
-    follow_link: 'https://github.com/ppoffice'
+    follow_link: 'https://space.bilibili.com/14750835'
     # Links to be shown on the bottom of the profile widget
     social_links:
       Github:
         icon: fab fa-github
-        url: 'https://github.com/ppoffice'
-      Facebook:
-        icon: fab fa-facebook
-        url: 'https://facebook.com'
-      Twitter:
-        icon: fab fa-twitter
-        url: 'https://twitter.com'
-      Dribbble:
-        icon: fab fa-dribbble
-        url: 'https://dribbble.com'
-      RSS:
-        icon: fas fa-rss
-        url: /
+        url: 'https://github.com/duerwuyi'
+
+  # Recommendation links widget configurations
+  #-
+    # Where should the widget be placed, left sidebar or right sidebar
+    #position: left
+    #type: links
+    # Names and URLs of the sites
+    #links:
+    #  Hexo: 'https://hexo.io'
+    #  Bulma: 'https://bulma.io'
+
   # Table of contents widget configurations
   -
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
+  # Where should the widget be placed, left sidebar or right sidebar
     type: toc
-    # Whether to show the index of each heading
-    index: true
-  # Recommendation links widget configurations
-  -
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: links
-    # Names and URLs of the sites
-    links:
-      Hexo: 'https://hexo.io'
-      Bulma: 'https://bulma.io'
-  # Categories widget configurations
-  -
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: categories
-  # Recent posts widget configurations
-  -
-    # Where should the widget be placed, left sidebar or right sidebar
     position: right
+    # Whether to show the index of each heading
+    index: false
+  -
+    # Where should the widget be placed, left sidebar or right sidebar
+    position: left
     type: recent_posts
   # Archives widget configurations
+
+  # Categories widget configurations
+  -
+  # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: categories
+# Recent posts widget configurations
   -
     # Where should the widget be placed, left sidebar or right sidebar
-    position: right
+    position: left
     type: archives
   # Tags widget configurations
   -
     # Where should the widget be placed, left sidebar or right sidebar
-    position: right
+    position: left
     type: tags
   # Google FeedBurner email subscription widget configurations
   # -
