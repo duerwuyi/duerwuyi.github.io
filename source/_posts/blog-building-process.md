@@ -5,8 +5,8 @@ author: Duerwuyi
 tags: [blog, hexo, icarus, Web]
 categories: [Web, blog]
 toc: true
-cover: /2022/01/27/blog-building-process/og_image.png
-thumbnail: /2022/01/27/blog-building-process/og_image.png
+cover: https://duerwuyi.github.io/2022/01/27/blog-building-process/og_image.png
+thumbnail: https://duerwuyi.github.io/2022/01/27/blog-building-process/og_image.png
 ---
 
 本文将记录该博客创建过程。使用hexo博客框架，icarus主题。
@@ -160,7 +160,7 @@ $ ```
 
 想要每篇文章自动添加此头部，可在 scaffolds/post.md 中添加一行toc: true。
 
-最后再更改一下布局，把个人信息相关全都放在左栏，目录放在右栏。在大屏下文章内容区域（中间的部分）显得过于拥挤，过窄，在之后会对此进行调整。
+最后再更改一下布局，把个人信息相关全都放在左栏，目录放在右栏。
 
 ## 项目的Github链接
 
@@ -190,4 +190,46 @@ About: /about
 ```
 
 ## 主页的文章概览
+
+使用more来截断文章，截断前的部分为主页概要。
+
+``` html html
+<!-- more -->
+```
+在文章头部添加cover: 和thumbnail: 可以添加概要部分的展示图片。~~（手机端似乎不显示）~~已解决：要用绝对网址。
+
+![概览](abstract.png)
+
+## gittalk评论功能。
+
+gittalk评论功能使用了来自第三方的评论区。使用github账户开通该应用，就可以利用仓库的issue功能来实现评论区内容的存储。
+
+详情请看：<a href="https://ppoffice.github.io/hexo-theme-icarus/Plugins/Comment/icarus%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97-%E7%94%A8%E6%88%B7%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6/#Gitalk">
+icrus官方文档-gittalk插件</a>
+
+注意Outh应用的主页和回调网址要写全！
+
+开通完毕后在底部的评论区用author账号完成初始化后该文章将开通评论。
+
+``` yaml _config.icarus.yml 
+comment:
+    type: gitalk
+    client_id: xxxxxxxxxxxxxxxxxxxx  # 私有的
+    client_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  # 私有的
+    repo: Some-of-Your-GitHub-Repo  # 你的仓库名字
+    owner: your_github_name         # 你的github用户名
+    admin:
+        - your_github_name          # 你的github用户名
+    per_page: 20                    # 可选填
+    distraction_free_mode: false    # 可选填
+    pager_direction: last           # 可选填
+    create_issue_manually: false    # 可选填
+    proxy:                          # 可选填
+    flip_move_options:              # 可选填
+    enable_hotkey: true             # 可选填
+    language: zh-CN                 # 可选填
+```
+## 卜蒜子 记录访问量
+
+将plugins > busuanzi设置为true来开启不蒜子访客计数器并在网页尾部和每篇博文的头部展示访问次数。
 
